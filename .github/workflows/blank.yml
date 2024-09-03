@@ -5,6 +5,7 @@ on:
     
 permissions:
   issues: write
+  pull-requests: write
   contents: write
 
 jobs:
@@ -21,6 +22,7 @@ jobs:
         max-issues: 20
         tag-committer: false
         stale-branch-label: 'stale branch 🗑️'
+        stale-pr-label: 'stale pr 🗑️'
         compare-branches: 'info'
         branches-filter-regex: '^((?!dependabot))'
         rate-limit: false
