@@ -1,4 +1,4 @@
-name: Stale Branches
+name: Stale Branches and PRs
 
 on:
   create
@@ -9,11 +9,11 @@ permissions:
   contents: write
 
 jobs:
-  stale_branches:
+  stale:
     runs-on: ubuntu-latest
     steps:
-    - name: Stale Branches
-      uses: crs-k/stale-branches@v5.0.0
+    - name: Stale Branches an PRs
+      uses: actions/stale@v5
       with:
         repo-token: '${{ secrets.GITHUB_TOKEN }}'
         days-before-stale: 0
@@ -22,6 +22,7 @@ jobs:
         max-issues: 20
         tag-committer: false
         stale-branch-label: 'stale branch 🗑️'
+        stale-pr-label: 'stale branch 🗑️'
         compare-branches: 'info'
         branches-filter-regex: '^((?!dependabot))'
         rate-limit: false
