@@ -19,7 +19,7 @@ jobs:
         days-before-stale: 0
         days-before-delete: 180
         comment-updates: false
-        max-issues: 20
+        max-issues: 100
         tag-committer: false
         stale-branch-label: 'stale branch 🗑️'
         stale-pr-label: 'stale branch 🗑️'
