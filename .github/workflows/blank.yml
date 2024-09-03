@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  stale-branch:
+  stale-branches:
     runs-on: ubuntu-latest
     steps:
     - name: Stale Branches an PRs
