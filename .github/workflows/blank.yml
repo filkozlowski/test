@@ -21,6 +21,7 @@ jobs:
         max-issues: 0
         tag-committer: false
         stale-pr-label: 'stale'
+        stale-issue-label: 'stale'
         compare-branches: 'info'
         branches-filter-regex: '^((?!dependabot))'
         rate-limit: false
