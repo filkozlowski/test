@@ -1,4 +1,4 @@
-name: Stale Branches
+name: stale Branches
 
 on:
   create
@@ -11,7 +11,7 @@ jobs:
   stale_branches:
     runs-on: ubuntu-latest
     steps:
-    - name: Stale Branches
+    - name: stale branches
       uses: actions/stale@v9
       with:
         repo-token: '${{ secrets.GITHUB_TOKEN }}'
