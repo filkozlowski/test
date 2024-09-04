@@ -1,22 +1,13 @@
-name: Stale Branches and PRs
+name: Mark Stale Branches
 
 on:
   create
-    
-permissions:
-  issues: write
-  pull-requests: write
-  contents: write
-
+  
 jobs:
   stale-branches:
     runs-on: ubuntu-latest
     steps:
-    - name: Stale Branches
-      uses: crs-k/stale-branches@v6.0.2
-      with:
-        repo-token: '${{ secrets.GITHUB_TOKEN }}'
-        days-before-stale: 1
-        days-before-delete: 180
+    - name: Checkout code
+      uses: actions/checkout@v2
 
     
